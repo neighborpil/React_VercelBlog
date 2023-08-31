@@ -17,7 +17,7 @@
 ```
 
 ### tailwind css
-- installation guide: https://tailwindcss.com/docs/installation
+- installation guide: [https://tailwindcss.com/docs/installation](https://tailwindcss.com/docs/guides/nextjs)
 1. install
 ```bash
 % yarn add -D tailwindcss postcss autoprefixer
