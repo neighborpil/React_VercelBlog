@@ -15,3 +15,14 @@
 % git commit -m "feat: initial blog deploy"
 % git push --set-upstream origin main
 ```
+
+### tailwind css
+- [installation guide](https://tailwindcss.com/docs/installation)
+1. install
+```bash
+% yarn add -D tailwindcss postcss autoprefixer
+```
+2. initializing
+```bash
+% npx tailwindcss init -p
+```
