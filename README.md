@@ -17,7 +17,7 @@
 ```
 
 ### tailwind css
-- [installation guide](https://tailwindcss.com/docs/installation)
+- installation guide: https://tailwindcss.com/docs/installation
 1. install
 ```bash
 % yarn add -D tailwindcss postcss autoprefixer
