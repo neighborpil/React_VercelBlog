@@ -34,3 +34,9 @@
 % yarn add next-mdx-remote react-syntax-highlighter
 ```
 
+### add site-map
+- doc: https://www.npmjs.com/package/next-sitemap
+- installation
+```bash
+yarn add -D next-sitemap
+```
