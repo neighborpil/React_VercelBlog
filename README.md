@@ -26,3 +26,11 @@
 ```bash
 % npx tailwindcss init -p
 ```
+
+### mdx setting
+- document: https://mdxjs.com/
+- installation
+```bash
+% yarn add next-mdx-remote react-syntax-highlighter
+```
+
