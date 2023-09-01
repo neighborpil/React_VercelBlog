@@ -40,3 +40,7 @@
 ```bash
 yarn add -D next-sitemap
 ```
+
+### reply function
+- utterances: [https://utteranc.es/](https://utteranc.es/)
+- installation
