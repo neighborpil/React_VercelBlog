@@ -16,6 +16,11 @@ export default function Layout({ children, home }) {
         : 'light'
       : 'light',
   )
+  const [isMounted, setIsMounted] = useState(false)
+
+  useEffect(() => {
+    setIsMounted(true)
+  }, [])
 
   useEffect(() => {
     if (theme === 'dark') {
@@ -58,11 +63,12 @@ export default function Layout({ children, home }) {
           <meta name="twitter:card" content="summary_large_image" />
         </Head>
         <button className={'w-12 px-2'} onClick={handleClick}>
-          {theme === 'dark' ? (
-            <img src="/light-mode.svg" alt="light" />
-          ) : (
-            <img src="/dark-mode.svg" alt="dark" />
-          )}
+          {isMounted &&
+            (theme === 'dark' ? (
+              <Image src="/light-mode.svg" width={32} height={32} alt="light" />
+            ) : (
+              <Image src="/dark-mode.svg" width={32} height={32} alt="dark" />
+            ))}
         </button>
         <header className={styles.header}>
           {home ? (
@@ -73,7 +79,7 @@ export default function Layout({ children, home }) {
                 className={utilStyles.borderCircle}
                 height={144}
                 width={144}
-                alt=""
+                alt={name}
               />
               <h1 className={utilStyles.heading2Xl}>{name}</h1>
             </>
@@ -86,7 +92,7 @@ export default function Layout({ children, home }) {
                   className={utilStyles.borderCircle}
                   height={108}
                   width={108}
-                  alt=""
+                  alt={name}
                 />
               </Link>
               <h2 className={utilStyles.headingLg}>

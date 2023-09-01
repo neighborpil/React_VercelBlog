@@ -1,4 +1,3 @@
-import { ca } from 'date-fns/locale'
 import { createPost } from '../../lib/posts'
 import { format } from 'date-fns'
 
