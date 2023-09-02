@@ -43,4 +43,6 @@ yarn add -D next-sitemap
 
 ### reply function
 - utterances: [https://utteranc.es/](https://utteranc.es/)
-- installation
+- This will use the GitHub issue and comments functions
+- installation on GitHub marketplace
+    + https://github.com/marketplace
